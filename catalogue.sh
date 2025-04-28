@@ -11,4 +11,4 @@ mongosh --host mongodb-dev.rahuldevops85.online </app/db/master-data.js
 #function call
 system_setup
 
-echo ${dir_loc}
+echo - ${dir_loc}
