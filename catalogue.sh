@@ -1,5 +1,6 @@
 service_name=catalogue
 source common.sh
+dir_loc=$(pwd)
 #function call
 nodejs
 
@@ -9,3 +10,5 @@ mongosh --host mongodb-dev.rahuldevops85.online </app/db/master-data.js
 
 #function call
 system_setup
+
+echo ${dir_loc}
