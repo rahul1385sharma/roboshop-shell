@@ -1,3 +1,5 @@
+service_name=cart
+source common.sh
 dnf module disable nodejs -y
 dnf module enable nodejs:20 -y
 dnf install nodejs -y
@@ -11,8 +13,7 @@ unzip /tmp/cart.zip
 
 cd /app
 npm install
+#function call
+system_setup
 
-systemctl daemon-reload
 
-systemctl enable cart
-systemctl start cart
