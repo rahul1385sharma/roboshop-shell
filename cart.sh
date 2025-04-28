@@ -1,8 +1,7 @@
 service_name=cart
 source common.sh
-dnf module disable nodejs -y
-dnf module enable nodejs:20 -y
-dnf install nodejs -y
+#function call
+nodejs
 
 cp cart.service /etc/systemd/system/cart.service
 useradd roboshop
